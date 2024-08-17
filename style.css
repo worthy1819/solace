@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-bar {
+    background-color: #cccccc;
+}
+
+#nav-1 {
+    display: none;
+}
+
+#nav-1 .logo {
+    border: none;
+    font-weight: bold;
+    color: black;
+}
+
+#nav-1 .logo:hover {
+    text-shadow: 5px 5px 5px #666666;
+}
+
+#nav-1 a {
+    border-right: 2px solid #cccccc;
+    padding-right: 10px;
+    color: #666666;
+}
+
+#nav-1 a:hover {
+    color: black;
+    border-color: black;
+}
+
+#nav-2 {
+    display: flex;
+}
+
+#nav-2 .logo2 {
+    border: none;
+    font-weight: bold;
+    color: black;
+}
+
+#nav-2 .drawer-content label {
+    background-color: transparent;
+    border: 2px solid #cccccc;
+}
+
+#nav-2 .drawer-side ul {
+    background-color: white;
+    color: black;
+}
+
+#home {
+    background-image: url(Photos/bg.png);
+    height: 100dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#home .text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: black;
+}
+
+#home .text h1 {
+    font-weight: bolder;
+    font-size: 65px;
+}
+
+#home .text h2 {
+    font-size: 40px;
+}
+
+#home .cta {
+    border: 2px solid black;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    color: black;
+    font-size: larger;
+}
+
+#home .cta:hover {
+    background-color: transparent;
+    color: white;
+}
+
+section {
+    padding: 40px;
+    height: 100dvh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .abt .abt-text .abt-heading {
+    font-size: 70px;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+#about .abt .abt-text .abt-subhead {
+    font-size: 30px;
+    color: #666666;
+    text-align: right;
+}
+
+#about .abt .abt-text .abt-des {
+    font-size: 20px;
+    text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+    #nav-1 {
+        display: flex;
+    }
+
+    #nav-2 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #home .text {
+        left: 0%;
+    }
+
+    #home .text h1 {
+        font-size: 55px;
+    }
+
+    #home .text h2 {
+        font-size: 35px;
+    }
+
+    #home .cta {
+        font-size: large;
+    }
+
+    section {
+        margin: 20px 10px;
+    }
+
+    #about {
+        margin-top: 50px;
+    }
+
+    #about .abt .abt-text {
+        margin: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #home .text {
+        padding: 6px;
+        width: 100%;
+    }
+
+    #home .text h1 {
+        font-size: 45px;
+    }
+
+    #home .text h2 {
+        font-size: 25px;
+    }
+
+    #home .cta {
+        font-size: medium;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #about .abt .abt-text .abt-heading {
+        font-size: 40px;
+    }
+
+    #about .abt .abt-text .abt-subhead {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #about .abt .abt-text .abt-des {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    #home .text h1 {
+        font-size: 35px;
+    }
+
+    #home .text h2 {
+        font-size: 20px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 0px;
+        height: fit-content;
+    }
+
+    #about .abt .abt-text .abt-subhead {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #about .abt .abt-text .abt-des {
+        font-size: 16px;
+        text-align: center;
+    }
+}
